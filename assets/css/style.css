@@ -1,3 +1,16 @@
+@font-face {
+    font-family: NenuMachina;
+    src: url('../font/fonts/NeueMachina-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: NenuMachina;
+    src: url('../font/fonts//THICCCBOI-Bold.ttf');
+    font-weight: 700;
+}
+*{
+    font-family:NenuMachina , sans-serif ;
+}
 @media (max-width:768px) {
     label[for="menu"] {
         display: flex;
@@ -34,7 +47,7 @@
 
     input[type="checkbox"]:checked ~ ul.menu {
         right: 0;
-        background-color: #627aad;
+        background-color: #cee615;
     }
 
     input[type="checkbox"]:checked ~ ul.menu {
@@ -70,4 +83,76 @@
     padding: 20px;
     background-color: white;
     position: relative;
+}
+.slick-parent-two 
+.slick-track {
+    display: flex;
+    gap: 40px;
+}
+/* slider */
+.slider .slick-list {
+    overflow: unset !important;
+}
+
+.slider .slick-track {
+    display: flex;
+    gap: 47px;
+}
+
+.slider .slick-dots li {
+    background-color: #d9d9d9;
+    border-radius: 100px;
+    width: 10px;
+    height: 10px;
+}
+
+.slider .slick-dots .slick-active {
+    width: 10px;
+    background-color: #3b5998;
+    border-radius: 21px;
+    height: 10px;
+}
+
+.slider .slick-dots {
+    position: absolute !important;
+    display: flex;
+    margin-top: 10px;
+    bottom: -60px !important;
+    justify-content: center;
+}
+
+.slider .slick-dots li button:before {
+    color: transparent !important;
+}
+
+.slider button.slick-next {
+    display: none !important;
+}
+
+.slider button.slick-prev {
+    display: none !important;
+}
+
+/* footer slider */
+.slider-footer .slick-track {
+    display: flex;
+    gap: 47px;
+    align-items: center;
+}
+
+.slider-footer.slick-dotted.slick-slider {
+    display: unset !important;
+}
+
+.slider-footer .slick-dots {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    position: unset;
+}
+.slider-parent-2 .slick-list .slick-track {
+    gap: 20px   ;
+    display: flex;
 }
